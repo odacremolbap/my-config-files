@@ -9,5 +9,33 @@ endif
 
 call plug#begin('~/.local/share/vim/plugins')
 
+" Allow paste on edit mode
+Plug 'ConradIrwin/vim-bracketed-paste'
+
+" Closing quotes, parenthesis etc
+Plug 'Raimondi/delimitMate'
+
+" Known snippets
+Plug 'SirVer/ultisnips'
+
+" Dockerfile syntax
+Plug 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+
+" Go syntax
+Plug 'fatih/vim-go'
+
+" JSON syntax
+Plug 'elzr/vim-json', {'for' : 'json'}
+
+" Markdown syntax
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
+" File tree view
+Plug 'scrooloose/nerdtree'
+
+" Monokai color scheme
+Plug 'sickill/vim-monokai'
+
 call plug#end()
 
