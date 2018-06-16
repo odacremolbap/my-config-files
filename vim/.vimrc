@@ -39,3 +39,11 @@ Plug 'sickill/vim-monokai'
 
 call plug#end()
 
+
+map <C-n> :NERDTreeToggle<CR>
+
+" Monokai scheme
+syntax enable
+colorscheme monokai
+
+
