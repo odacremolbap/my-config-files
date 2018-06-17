@@ -1,5 +1,3 @@
-" Disable vi-compatibility
-set nocompatible 
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -40,10 +38,32 @@ Plug 'sickill/vim-monokai'
 call plug#end()
 
 
+" Disable vi-compatibility
+set nocompatible 
+
+" Enable 256 colors
+set t_Co=256
+
+" Set default encoding to utf-8
+set encoding=utf-8
+
+" Show statusline
+set laststatus=2
+
+" Hide default mode
+set noshowmode
+
+" Fast terminal connection
+set ttyfast
+
 map <C-n> :NERDTreeToggle<CR>
 
 " Monokai scheme
 syntax enable
 colorscheme monokai
+
+" Quiet, no bells
+set visualbell
+set noerrorbells
 
 
