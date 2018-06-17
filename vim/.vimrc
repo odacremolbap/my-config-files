@@ -66,4 +66,5 @@ colorscheme monokai
 set visualbell
 set noerrorbells
 
-
+" Change to current dir
+set autochdir
